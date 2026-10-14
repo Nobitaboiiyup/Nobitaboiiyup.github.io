@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172536">
+  <meta name="description" content="Personal portfolio and projects.">
+  <title>Your Name | Personal Portfolio</title>
+  <style>
+    :root{--ink:#172536;--muted:#5c6b7b;--paper:#f5f7fa;--line:#e1e7ee;--blue:#2d6cdf;--card:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit}
+    .wrap{width:min(1040px,calc(100% - 36px));margin:auto}
+    header{padding:24px 0}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-size:.86rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .navlinks{display:flex;gap:20px;flex-wrap:wrap}
+    .navlinks a{text-decoration:none;color:var(--muted);font-size:.92rem}
+    .hero{background:var(--ink);color:white;border-radius:24px;padding:clamp(28px,7vw,72px);margin:20px 0 56px;overflow:hidden;position:relative}
+    .eyebrow{color:#a9c7e8;font-size:.78rem;font-weight:750;letter-spacing:.15em;text-transform:uppercase}
+    h1{font-size:clamp(2.4rem,7vw,4.8rem);line-height:1.04;letter-spacing:-.055em;max-width:720px;margin:18px 0}
+    .hero p{max-width:620px;color:#d5dfea;font-size:1.08rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:11px 17px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.94rem}
+    .primary{background:white;color:var(--ink)}
+    .secondary{border:1px solid #71849a;color:white}
+    section{margin:0 0 54px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}
+    h2{font-size:1.65rem;letter-spacing:-.03em;margin:0}
+    .sub{margin:4px 0 0;color:var(--muted)}
+    .about{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .project{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;min-height:185px;display:flex;flex-direction:column;align-items:flex-start}
+    .project-icon{display:grid;place-items:center;width:42px;height:42px;background:#edf3fb;border-radius:12px;font-size:1.2rem;margin-bottom:18px}
+    .project h3{margin:0 0 6px;font-size:1.12rem}
+    .project p{margin:0;color:var(--muted);font-size:.95rem}
+    .project a{margin-top:auto;padding-top:18px;color:var(--blue);text-decoration:none;font-weight:700;font-size:.92rem}
+    .links{display:flex;gap:12px;flex-wrap:wrap}
+    .social{background:white;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;font-weight:650}
+    footer{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted);font-size:.9rem}
+    @media(max-width:640px){.nav{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.hero{margin-top:12px}.section-head{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="brand">Your Name / Portfolio</div>
+      <div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#connect">Connect</a></div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="eyebrow">Personal portfolio</div>
+      <h1 id="intro-title">Building things.<br>Learning constantly.</h1>
+      <p>Welcome to my corner of the internet — a place to share what I'm learning, the projects I'm creating, and the ideas I'm exploring.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my projects ↗</a>
+        <a class="btn secondary" href="#about">A little about me</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-head"><div><h2>About me</h2><p class="sub">A quick introduction.</p></div></div>
+      <div class="about">
+        <p>Hi, I'm <strong>Your Name</strong>. I'm curious about technology, creative projects, and learning how things work. This website is where I'll document projects I'm proud of, share what I'm working on, and keep track of what comes next.</p>
+        <p>I'm always learning, experimenting, and looking for ways to turn ideas into something real.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-head"><div><h2>Featured projects</h2><p class="sub">A few things I'm building and exploring.</p></div></div>
+      <div class="grid">
+        <article class="project">
+          <div class="project-icon" aria-hidden="true">✦</div>
+          <h3>Novera</h3>
+          <p>A Discord community and bot project focused on bringing people together and building useful features.</p>
+          <a href="#connect">Project details coming soon ↗</a>
+        </article>
+        <article class="project">
+          <div class="project-icon" aria-hidden="true">⌘</div>
+          <h3>More projects</h3>
+          <p>New ideas, experiments, and future projects will be added here as they take shape.</p>
+          <a href="#connect">Stay connected ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="connect">
+      <div class="section-head"><div><h2>Find me online</h2><p class="sub">Add your public profile links here.</p></div></div>
+      <div class="links">
+        <a class="social" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="social" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+        <a class="social" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year">2026</span> Your Name. Built with curiosity.</div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
